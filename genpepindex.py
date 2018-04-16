@@ -45,7 +45,7 @@ def main(argv):
                 with codecs.open(abs_file_path, 'r', encoding='UTF-8') as pep_file:
                     try:
                         pep = PEP(pep_file)
-                        if pep.number != int(file_path[4:-4]):
+                        if pep.number != int(file_path[4:8]):
                             raise PEPError('PEP number does not match file name',
                                            file_path, pep.number)
                         peps.append(pep)

@@ -15,7 +15,7 @@ PYTHON=python3
 .rst.html:
 	@$(PYTHON) $(PEP2HTML) $<
 
-TARGETS= $(patsubst %.rst,%.html,$(wildcard pep-????.rst)) $(patsubst %.txt,%.html,$(wildcard pep-????.txt))  pep-0000.html
+TARGETS= $(patsubst %.rst,%.html,$(wildcard pep-????*.rst)) $(patsubst %.txt,%.html,$(wildcard pep-????.txt))  pep-0000.html
 
 all: pep-0000.txt $(TARGETS)
 

@@ -8,7 +8,7 @@ git push origin docs-korean
 git checkout -B gh-pages
 git rebase docs-korean
 
-echo '!html/' >> .gitignore
+echo '!*.html' >> .gitignore
 
 make all
 
